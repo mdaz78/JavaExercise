@@ -25,25 +25,18 @@
 
 public class DecimalComparator {
   public static void main(String[] args) {
-    // Test case 1: Equal numbers
-    System.out.println("Test case 1: Equal numbers (3.175 vs 3.175)");
-    System.out.println("Are they equal? " + areEqualByThreeDecimalPlaces(3.175, 3.175));
+    // Test cases with various decimal numbers
+    System.out.println("Test 1: areEqualByThreeDecimalPlaces(-3.1756, -3.175) should be true = " +
+        areEqualByThreeDecimalPlaces(-3.1756, -3.175));
 
-    // Test case 2: Different numbers beyond 3 decimal places
-    System.out.println("\nTest case 2: Different beyond 3 decimals (3.1756 vs 3.1757)");
-    System.out.println("Are they equal? " + areEqualByThreeDecimalPlaces(3.1756, 3.1757));
+    System.out.println("Test 2: areEqualByThreeDecimalPlaces(3.175, 3.176) should be false = " +
+        areEqualByThreeDecimalPlaces(3.175, 3.176));
 
-    // Test case 3: Different numbers within first 3 decimals
-    System.out.println("\nTest case 3: Different within 3 decimals (3.123 vs 3.124)");
-    System.out.println("Are they equal? " + areEqualByThreeDecimalPlaces(3.123, 3.124));
+    System.out.println("Test 3: areEqualByThreeDecimalPlaces(3.0, 3.0) should be true = " +
+        areEqualByThreeDecimalPlaces(3.0, 3.0));
 
-    // Test case 4: Negative numbers
-    System.out.println("\nTest case 4: Negative numbers (-3.123 vs -3.123)");
-    System.out.println("Are they equal? " + areEqualByThreeDecimalPlaces(-3.123, -3.123));
-
-    // Test case 5: Mixed positive and negative
-    System.out.println("\nTest case 5: Mixed signs (3.123 vs -3.123)");
-    System.out.println("Are they equal? " + areEqualByThreeDecimalPlaces(3.123, -3.123));
+    System.out.println("Test 4: areEqualByThreeDecimalPlaces(-3.123, 3.123) should be false = " +
+        areEqualByThreeDecimalPlaces(-3.123, 3.123));
   }
 
   public static boolean areEqualByThreeDecimalPlaces(double num1, double num2) {

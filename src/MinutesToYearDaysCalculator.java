@@ -51,9 +51,21 @@
  */
 public class MinutesToYearDaysCalculator {
   public static void main(String[] args) {
+    // Test various minute values
+    System.out.println("Test 1: printYearsAndDays(525600):");
     printYearsAndDays(525600);
+
+    System.out.println("\nTest 2: printYearsAndDays(1051200):");
     printYearsAndDays(1051200);
+
+    System.out.println("\nTest 3: printYearsAndDays(561600):");
     printYearsAndDays(561600);
+
+    System.out.println("\nTest 4: printYearsAndDays(-525600):");
+    printYearsAndDays(-525600);
+
+    System.out.println("\nTest 5: printYearsAndDays(0):");
+    printYearsAndDays(0);
   }
 
   public static void printYearsAndDays(long minutes) {

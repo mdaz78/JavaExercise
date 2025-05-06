@@ -22,9 +22,12 @@
 
 public class EqualSumChecker {
   public static void main(String[] args) {
-    System.out.println(hasEqualSum(1, 1, 1) == false);
-    System.out.println(hasEqualSum(1, 1, 2) == true);
-    System.out.println(hasEqualSum(1, -1, 0) == true);
+    // Test various number combinations
+    System.out.println("Test 1: hasEqualSum(1, 1, 1) should be false = " + hasEqualSum(1, 1, 1));
+    System.out.println("Test 2: hasEqualSum(1, 1, 2) should be true = " + hasEqualSum(1, 1, 2));
+    System.out.println("Test 3: hasEqualSum(1, -1, 0) should be true = " + hasEqualSum(1, -1, 0));
+    System.out.println("Test 4: hasEqualSum(2, 3, 6) should be false = " + hasEqualSum(2, 3, 6));
+    System.out.println("Test 5: hasEqualSum(-1, 1, 0) should be true = " + hasEqualSum(-1, 1, 0));
   }
 
   public static boolean hasEqualSum(int num1, int num2, int sum) {

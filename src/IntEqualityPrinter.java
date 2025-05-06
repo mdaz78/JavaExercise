@@ -26,25 +26,20 @@
  */
 public class IntEqualityPrinter {
   public static void main(String[] args) {
-    // Test case 1: All numbers equal
-    System.out.println("Test case 1: All numbers equal");
+    System.out.println("Test 1: printEqual(1, 1, 1):");
     printEqual(1, 1, 1);
 
-    // Test case 2: Two numbers equal, one different
-    System.out.println("\nTest case 2: Two numbers equal, one different");
+    System.out.println("\nTest 2: printEqual(1, 1, 2):");
     printEqual(1, 1, 2);
 
-    // Test case 3: Invalid value (negative numbers)
-    System.out.println("\nTest case 3: Invalid value (negative numbers)");
+    System.out.println("\nTest 3: printEqual(-1, -1, -1):");
     printEqual(-1, -1, -1);
 
-    // Test case 4: All numbers different
-    System.out.println("\nTest case 4: All numbers different");
+    System.out.println("\nTest 4: printEqual(1, 2, 3):");
     printEqual(1, 2, 3);
 
-    // Additional test case: Different order of equal numbers
-    System.out.println("\nTest case 5: Different order of equal numbers");
-    printEqual(2, 1, 2);
+    System.out.println("\nTest 5: printEqual(2, 2, 2):");
+    printEqual(2, 2, 2);
   }
 
   public static void printEqual(int n1, int n2, int n3) {

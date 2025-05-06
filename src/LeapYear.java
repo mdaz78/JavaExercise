@@ -59,10 +59,13 @@
 
 public class LeapYear {
   public static void main(String[] args) {
-    System.out.println(isLeapYear(-1600) == false);
-    System.out.println(isLeapYear(1600) == true);
-    System.out.println(isLeapYear(2017) == false);
-    System.out.println(isLeapYear(2000) == true);
+    // Test various years
+    System.out.println("Test 1: isLeapYear(-1600) should be false = " + isLeapYear(-1600));
+    System.out.println("Test 2: isLeapYear(1600) should be true = " + isLeapYear(1600));
+    System.out.println("Test 3: isLeapYear(2017) should be false = " + isLeapYear(2017));
+    System.out.println("Test 4: isLeapYear(2000) should be true = " + isLeapYear(2000));
+    System.out.println("Test 5: isLeapYear(1924) should be true = " + isLeapYear(1924));
+    System.out.println("Test 6: isLeapYear(1800) should be false = " + isLeapYear(1800));
   }
 
   public static boolean isLeapYear(int year) {

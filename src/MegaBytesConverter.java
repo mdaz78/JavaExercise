@@ -40,7 +40,18 @@
 
 public class MegaBytesConverter {
     public static void main(String[] args) {
+        // Test with various kilobyte values
+        System.out.println("Test 1: printMegaBytesAndKiloBytes(2500):");
         printMegaBytesAndKiloBytes(2500);
+
+        System.out.println("\nTest 2: printMegaBytesAndKiloBytes(-1024):");
+        printMegaBytesAndKiloBytes(-1024);
+
+        System.out.println("\nTest 3: printMegaBytesAndKiloBytes(5000):");
+        printMegaBytesAndKiloBytes(5000);
+
+        System.out.println("\nTest 4: printMegaBytesAndKiloBytes(1024):");
+        printMegaBytesAndKiloBytes(1024);
     }
 
     public static void printMegaBytesAndKiloBytes(int kiloBytes) {

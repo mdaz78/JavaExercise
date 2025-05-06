@@ -34,7 +34,14 @@
 
 public class TeenNumberChecker {
   public static void main(String[] args) {
-    System.out.println(hasTeen(9, 99, 19));
+    // Test hasTeen method
+    System.out.println("Test 1: hasTeen(9, 99, 19) should be true = " + hasTeen(9, 99, 19));
+    System.out.println("Test 2: hasTeen(23, 15, 42) should be true = " + hasTeen(23, 15, 42));
+    System.out.println("Test 3: hasTeen(22, 23, 34) should be false = " + hasTeen(22, 23, 34));
+
+    // Test isTeen method
+    System.out.println("Test 4: isTeen(9) should be false = " + isTeen(9));
+    System.out.println("Test 5: isTeen(13) should be true = " + isTeen(13));
   }
 
   public static boolean hasTeen(int age1, int age2, int age3) {
