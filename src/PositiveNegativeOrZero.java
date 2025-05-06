@@ -12,6 +12,20 @@
 
 public class PositiveNegativeOrZero {
     public static void main(String[] args) {
+        System.out.println("Test 1: checkNumber(10):");
+        checkNumber(10);
+
+        System.out.println("\nTest 2: checkNumber(-20):");
+        checkNumber(-20);
+
+        System.out.println("\nTest 3: checkNumber(0):");
+        checkNumber(0);
+
+        System.out.println("\nTest 4: checkNumber(1):");
+        checkNumber(1);
+
+        System.out.println("\nTest 5: checkNumber(-1):");
+        checkNumber(-1);
     }
 
     public static void checkNumber(int number) {
