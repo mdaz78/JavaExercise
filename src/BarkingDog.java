@@ -30,10 +30,25 @@
  */
 public class BarkingDog {
     public static void main(String[] args) {
-        System.out.println(shouldWakeUp(true, 1)); // true
-        System.out.println(shouldWakeUp(false, 2)); // false
-        System.out.println(shouldWakeUp(true, 8)); // false
-        System.out.println(shouldWakeUp(true, -1)); // false
+        // Test case 1: Dog is barking at night (should wake up)
+        System.out.println("Test case 1: Dog barking at night (3 AM)");
+        System.out.println("Should we wake up? " + shouldWakeUp(true, 3));
+
+        // Test case 2: Dog is barking but during the day (should not wake up)
+        System.out.println("\nTest case 2: Dog barking during day (2 PM)");
+        System.out.println("Should we wake up? " + shouldWakeUp(true, 14));
+
+        // Test case 3: Dog is not barking at night (should not wake up)
+        System.out.println("\nTest case 3: Dog not barking at night");
+        System.out.println("Should we wake up? " + shouldWakeUp(false, 2));
+
+        // Test case 4: Invalid hour
+        System.out.println("\nTest case 4: Invalid hour (-1)");
+        System.out.println("Should we wake up? " + shouldWakeUp(true, -1));
+
+        // Test case 5: Edge case - exactly 8 AM
+        System.out.println("\nTest case 5: Edge case - 8 AM");
+        System.out.println("Should we wake up? " + shouldWakeUp(true, 8));
     }
 
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
