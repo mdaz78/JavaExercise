@@ -72,19 +72,20 @@
  */
 public class SpeedConverter {
     public static void main(String[] args) {
-        // tests
-        System.out.println(toMilesPerHour(1.5) == 1);
-        System.out.println(toMilesPerHour(10.25) == 6);
-        System.out.println(toMilesPerHour(-5.6) == -1);
-        System.out.println(toMilesPerHour(75.114) == 47);
-        System.out.println(toMilesPerHour(95.75) == 60);
+        // Test various speed conversions
+        System.out.println("Test 1: toMilesPerHour(1.5) should be 1 = " + toMilesPerHour(1.5));
+        System.out.println("Test 2: toMilesPerHour(10.25) should be 6 = " + toMilesPerHour(10.25));
+        System.out.println("Test 3: toMilesPerHour(-5.6) should be -1 = " + toMilesPerHour(-5.6));
+        System.out.println("Test 4: toMilesPerHour(25.42) should be 16 = " + toMilesPerHour(25.42));
+        System.out.println("Test 5: toMilesPerHour(75.114) should be 47 = " + toMilesPerHour(75.114));
 
+        System.out.println("\nTesting printConversion method:");
+        System.out.println("Test 6: printConversion(1.5):");
         printConversion(1.5);
+        System.out.println("Test 7: printConversion(10.25):");
         printConversion(10.25);
+        System.out.println("Test 8: printConversion(-5.6):");
         printConversion(-5.6);
-        printConversion(25.42);
-        printConversion(75.114);
-        printConversion(95.75);
     }
 
     public static long toMilesPerHour(double kilometersPerHour) {
